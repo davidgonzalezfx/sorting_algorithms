@@ -6,9 +6,11 @@
  */
 void swap(int *array, int i, int j, int size)
 {
+    int aux;
+
     if (array[i] == array[j])
         return;
-    int aux = array[i];
+    aux = array[i];
     array[i] = array[j];
     array[j] = aux;
     print_array(array, size);
