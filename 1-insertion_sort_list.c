@@ -26,12 +26,13 @@ listint_t *swap_two(listint_t *a, listint_t *b, listint_t **list)
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *actual = (*list)->next;
+	listint_t *actual;
 	listint_t *prev, *back;
 
 	if (!list || !(*list) || !(*list)->next)
 		return;
 
+	actual = (*list)->next;
 	while (actual)
 	{
 		prev = actual->prev;
